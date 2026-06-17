@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Ahad — Front-end Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">AA<span class="dot">.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about"    class="nav__link">About</a></li>
+        <li><a href="#skills"   class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact"  class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid" aria-hidden="true"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow mono">Hello, world — I'm</span>
+      <h1 class="hero__name">Abdul<br>Ahad<span class="dot">.</span></h1>
+      <p class="hero__title mono">Front-end Developer</p>
+      <p class="hero__sub">I build clean, responsive interfaces that users actually enjoy.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact"  class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="mono">scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+ 
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">01 — About</span>
+        <h2 class="section__title">A little about me</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            I am a passionate and dedicated front-end developer starting my journey
+            in building modern, responsive, and user-friendly web applications.
+            I love turning creative designs into functional code.
+          </p>
+          <p>
+            My focus is on writing clean, maintainable code and crafting interfaces
+            that feel natural to use — whether on a phone, tablet, or desktop.
+          </p>
+        </div>
+        <div class="about__card">
+          <div class="about__stat"><span class="about__stat-num mono">4</span><span class="about__stat-label">Core Skills</span></div>
+          <div class="about__stat"><span class="about__stat-num mono">3</span><span class="about__stat-label">Projects Built</span></div>
+          <div class="about__stat"><span class="about__stat-num mono">∞</span><span class="about__stat-label">Drive to Learn</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ── SKILLS ── -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">02 — Skills</span>
+        <h2 class="section__title">What I work with</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-card__name">HTML</h3>
+          <p class="skill-card__desc">Semantic, accessible markup that forms the solid foundation of every project.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20A14.5 14.5 0 0 0 12 2"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <h3 class="skill-card__name">CSS</h3>
+          <p class="skill-card__desc">Responsive layouts, animations, and polished visual design with modern CSS.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="skill-card__name">JavaScript</h3>
+          <p class="skill-card__desc">Interactive, dynamic functionality — from DOM manipulation to async logic.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><line x1="1.05" y1="12" x2="7" y2="12"/><line x1="17.01" y1="12" x2="22.96" y2="12"/><line x1="12" y1="1.05" x2="12" y2="7"/><line x1="12" y1="17.01" x2="12" y2="22.96"/></svg>
+          </div>
+          <h3 class="skill-card__name">GitHub</h3>
+          <p class="skill-card__desc">Version control, collaboration, and keeping projects organised with Git.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ── PROJECTS ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">03 — Projects</span>
+        <h2 class="section__title">Things I've built</h2>
+      </div>
+      <div class="projects__grid">
+ 
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__num mono">01</span>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="View live site">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-card__link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Responsive Landing Page</h3>
+          <p class="project-card__desc">A modern, clean landing page layout built with semantic HTML and CSS Grid. Designed mobile-first with smooth scroll behaviour and subtle hover states.</p>
+          <div class="project-card__tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </article>
+ 
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__num mono">02</span>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="View live site">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-card__link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Weather App UI</h3>
+          <p class="project-card__desc">A sleek interface design using JavaScript to fetch and display live weather data. Features dynamic backgrounds that respond to current conditions.</p>
+          <div class="project-card__tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS</span>
+            <span class="tag">API</span>
+          </div>
+        </article>
+ 
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__num mono">03</span>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="View live site">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-card__link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Task Manager</h3>
+          <p class="project-card__desc">A functional to-do list application with add, complete, and delete actions. Uses localStorage to persist tasks across browser sessions.</p>
+          <div class="project-card__tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </article>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ── CONTACT ── -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">04 — Contact</span>
+        <h2 class="section__title">Let's work together</h2>
+      </div>
+      <div class="contact__body">
+        <p class="contact__sub">I'm open to front-end opportunities, freelance projects, and collaborations. Drop me a message and I'll get back to you promptly.</p>
+        <a href="mailto:abdulahad@email.com" class="btn btn--primary btn--lg">Say Hello →</a>
+        <div class="contact__socials">
+          <a href="#" class="social-link mono">GitHub</a>
+          <a href="#" class="social-link mono">LinkedIn</a>
+          <a href="#" class="social-link mono">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="nav__logo">AA<span class="dot">.</span></span>
+      <p class="footer__copy mono">© 2025 Abdul Ahad. Built with HTML, CSS & JS.</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
